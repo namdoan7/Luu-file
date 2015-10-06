@@ -1,0 +1,10 @@
+{
+  "name":"wordpress-heroku",
+  "scripts":{},
+  "env":{},
+  "addons":[
+    "cleardb",
+    "memcachier",
+    "newrelic"
+  ]
+}

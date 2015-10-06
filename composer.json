@@ -12,8 +12,6 @@
         }
     ],
     "require": {
-        "ext-memcached": "*",
-        "ext-apcu":"*",
         "johnpbloch/wordpress": "4.3",
         "wpackagist-plugin/akismet":"dev-trunk",
         "wpackagist-plugin/captcha":">=4.1.3",
