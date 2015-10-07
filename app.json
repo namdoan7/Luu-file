@@ -1,8 +1,9 @@
 {
-  "name":"wordpress-heroku",
-  "scripts":{},
-  "env":{},
-  "addons":[
+  "name": "wordpress-heroku",
+  "scripts": {},
+  "env": {},
+  "image": "heroku/php",
+  "addons": [
     "cleardb",
     "memcachier",
     "newrelic"
