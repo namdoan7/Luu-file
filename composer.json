@@ -36,7 +36,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "cp /app/user/wordpress/wp-content/plugins/w3-total-cache/wp-content/advanced-cache.php /app/user/wordpress/wp-content/advanced-cache.php"
+            "cp wordpress/wp-content/plugins/w3-total-cache/wp-content/advanced-cache.php wordpress/wp-content/advanced-cache.php"
         ] 
     }
 
