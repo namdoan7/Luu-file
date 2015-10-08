@@ -1,0 +1,37 @@
+web:
+  build: .
+  command: 'bash -c ''vendor/bin/heroku-php-nginx wordpress/'''
+  volumes:
+    - '.:/app/user'
+  working_dir: /app/user
+  environment:
+    PORT: 8080
+    MYSQL_DATABASE: cleardb
+    MYSQL_ALLOW_EMPTY_PASSWORD: yes
+    CLEARDB_DATABASE_URL: 'mysql://root:@cleardb:3306/cleardb'
+  ports:
+    - '8080:8080'
+  links:
+    - cleardb
+shell:
+  build: .
+  command: bash
+  volumes:
+    - '.:/app/user'
+  working_dir: /app/user
+  environment:
+    PORT: 8080
+    MYSQL_DATABASE: cleardb
+    MYSQL_ALLOW_EMPTY_PASSWORD: yes
+    CLEARDB_DATABASE_URL: 'mysql://root:@cleardb:3306/cleardb'
+  ports:
+    - '8080:8080'
+  links:
+    - cleardb
+cleardb:
+  image: mysql
+  environment:
+    MYSQL_DATABASE: cleardb
+    MYSQL_ALLOW_EMPTY_PASSWORD: yes
+    CLEARDB_DATABASE_URL: 'mysql://root:@cleardb:3306/cleardb'
+
