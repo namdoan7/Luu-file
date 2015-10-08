@@ -36,7 +36,11 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "cp wordpress/wp-content/plugins/w3-total-cache/wp-content/advanced-cache.php wordpress/wp-content/advanced-cache.php"
+            "cp wordpress/wp-content/plugins/w3-total-cache/wp-content/advanced-cache.php wordpress/wp-content/advanced-cache.php",
+            "mkdir wordpress/wp-content/cache",
+            "chmod 777 wordpress/wp-content/cache",
+            "mkdir wordpress/wp-content/w3tc-config",
+            "chmod 777 wordpress/wp-content/w3tc-config"
         ] 
     }
 
