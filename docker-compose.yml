@@ -1,8 +1,6 @@
 web:
   build: .
-  command: 'bash -c ''vendor/bin/heroku-php-nginx wordpress/'''
-  volumes:
-    - '.:/app/user'
+  command: 'bash -c ''vendor/bin/heroku-php-nginx -C nginx.conf wordpress/'''
   working_dir: /app/user
   environment:
     PORT: 8080
@@ -16,8 +14,6 @@ web:
 shell:
   build: .
   command: bash
-  volumes:
-    - '.:/app/user'
   working_dir: /app/user
   environment:
     PORT: 8080
@@ -28,6 +24,8 @@ shell:
     - '8080:8080'
   links:
     - cleardb
+  volumes:
+    - '.:/app/user'
 cleardb:
   image: mysql
   environment:
