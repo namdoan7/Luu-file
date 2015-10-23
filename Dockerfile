@@ -1,2 +1,2 @@
-FROM heroku/php
+FROM busbyjon/docker-php
 

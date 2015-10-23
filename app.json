@@ -1,7 +1,24 @@
 {
   "name": "wordpress-heroku",
   "scripts": {},
-  "env": {},
+  "env": {
+    "AMAZON_KEY": {
+      "description": "The Amazon IAM key",
+      "required": "true"
+    },
+    "AMAZON_SECRET": {
+      "description": "The Amazon IAM secret",
+      "required": "true"
+    },
+    "AMAZON_BUCKET": {
+      "description": "The Amazon Bucket",
+      "required": "true"
+    },
+    "CDN_CNAME_0": {
+      "description": "The Amazon cloudfront CNAME",
+      "required": "true"
+    }
+  },
   "image": "heroku/php",
   "addons": [
     "cleardb",
