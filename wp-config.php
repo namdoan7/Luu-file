@@ -35,6 +35,15 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
+/**
+ * WordPress SMTP server
+ */
+define('WP_SMTP_HOST',       'smtp.sendgrid.net');
+define('WP_SMTP_PORT',       25);                   // obligatory - default: 25
+define('WP_SMTP_ENCRYPTION', 'tls');                // obligatory: 'tls' or 'ssl' - default: no encryption
+define('WP_SMTP_USER',       getenv('SENDGRID_USERNAME'));           // obligatory - default: no user
+define('WP_SMTP_PASSWORD',   getenv('SENDGRID_PASSWORD'));           // obligatory - default: no password
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

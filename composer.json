@@ -5,10 +5,6 @@
         {
             "type":"composer",
             "url":"http://wpackagist.org"
-        },
-        {
-            "type": "git",
-            "url":  "https://github.com/busbyjon/jonbusby-blog.git"
         }
     ],
     "require-dev" : {
@@ -21,8 +17,7 @@
         "wpackagist-plugin/wordpress-importer":"0.6.1",
         "wpackagist-plugin/w3-total-cache":"0.9.4.1",
 	    "wpackagist-plugin/broken-link-checker":"1.10.9",
-        "busbyjon/jonbusby-blog": "dev-master",
-        "wpackagist-plugin/filebrowser": "dev-trunk"
+        "wpackagist-plugin/wp-smtp-config":"1.0"
     },
     "extra": {
        "heroku": {

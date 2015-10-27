@@ -4,20 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2ef6718809b4e86fe3cabac01c182bd7",
+    "hash": "90c8db7b2dad3d0179b12cc1441b37a8",
     "packages": [
-        {
-            "name": "busbyjon/jonbusby-blog",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/busbyjon/jonbusby-blog.git",
-                "reference": "db5fdf00bb4f06bfe1186741366f16aa3bfbaf38"
-            },
-            "type": "wordpress-theme",
-            "description": "Jon Busby's Wordpress Blog Theme",
-            "time": "2015-01-06 14:06:37"
-        },
         {
             "name": "composer/installers",
             "version": "v1.0.21",
@@ -217,7 +205,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/",
-            "time": "2015-09-24 17:50:51"
+            "time": "2015-10-15 00:08:30"
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
@@ -260,27 +248,6 @@
             "homepage": "https://wordpress.org/plugins/captcha/"
         },
         {
-            "name": "wpackagist-plugin/filebrowser",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/filebrowser/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/filebrowser.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/filebrowser/",
-            "time": "2012-08-17 17:31:13"
-        },
-        {
             "name": "wpackagist-plugin/w3-total-cache",
             "version": "0.9.4.1",
             "source": {
@@ -319,21 +286,41 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-smtp-config",
+            "version": "1.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-smtp-config/",
+                "reference": "tags/1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-smtp-config.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-smtp-config/"
         }
     ],
     "packages-dev": [
         {
             "name": "heroku/heroku-buildpack-php",
-            "version": "v78",
+            "version": "v80",
             "source": {
                 "type": "git",
                 "url": "https://github.com/heroku/heroku-buildpack-php.git",
-                "reference": "6db8c2a37e131ad811f5518ddfbe0e6248f49337"
+                "reference": "1b916117abc0fa3c4305eaa864085704b6e8161d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/6db8c2a37e131ad811f5518ddfbe0e6248f49337",
-                "reference": "6db8c2a37e131ad811f5518ddfbe0e6248f49337",
+                "url": "https://api.github.com/repos/heroku/heroku-buildpack-php/zipball/1b916117abc0fa3c4305eaa864085704b6e8161d",
+                "reference": "1b916117abc0fa3c4305eaa864085704b6e8161d",
                 "shasum": ""
             },
             "bin": [
@@ -364,15 +351,13 @@
                 "nginx",
                 "php"
             ],
-            "time": "2015-10-01 19:46:08"
+            "time": "2015-10-15 14:08:33"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wpackagist-plugin/akismet": 20,
-        "busbyjon/jonbusby-blog": 20,
-        "wpackagist-plugin/filebrowser": 20
+        "wpackagist-plugin/akismet": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
