@@ -53,14 +53,14 @@ define('WP_SMTP_PASSWORD',   getenv('SENDGRID_PASSWORD'));           // obligato
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'dsfdsfdsfdsfs');
-define('SECURE_AUTH_KEY',  'hgfghjf y6745657hgfrghfr');
-define('LOGGED_IN_KEY',    'hgfhjgfghfjhgfjhgfhgjf');
-define('NONCE_KEY',        'hgjfjhgfr6u54 yghfdghd');
-define('AUTH_SALT',        'gfhdgfh hfgd hgfey gfgf');
-define('SECURE_AUTH_SALT', 'gfdgfh dgfhd hfgd hfgd ');
-define('LOGGED_IN_SALT',   'gfd gfd gfhd ');
-define('NONCE_SALT',       'pklhliyi7tuyt');
+define('AUTH_KEY',         getenv('AUTH_KEY'));
+define('SECURE_AUTH_KEY',  getenv('SECURE_AUTH_KEY'));
+define('LOGGED_IN_KEY',    getenv('LOGGED_IN_KEY'));
+define('NONCE_KEY',        getenv('NONCE_KEY'));
+define('AUTH_SALT',        getenv('AUTH_SALT'));
+define('SECURE_AUTH_SALT', getenv('SECURE_AUTH_SALT'));
+define('LOGGED_IN_SALT',   getenv('LOGGED_IN_SALT'));
+define('NONCE_SALT',       getenv('NONCE_SALT'));
 
 /**#@-*/
 

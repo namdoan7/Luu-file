@@ -41,6 +41,38 @@
       "description": "The google pagespeed API key",
       "required": "true",
       "value": "TBC"
+    },
+    "AUTH_KEY": {
+      "description": "One of the wordpress secrets",
+      "generator": "secret"
+    },
+    "SECURE_AUTH_KEY": {
+      "description": "One of the wordpress secrets",
+      "generator": "secret"
+    },
+    "LOGGED_IN_KEY": {
+      "description": "One of the wordpress secrets",
+      "generator": "secret"
+    },
+    "NONCE_KEY": {
+      "description": "One of the wordpress secrets",
+      "generator": "secret"
+    },
+    "AUTH_SALT": {
+      "description": "One of the wordpress secrets",
+      "generator": "secret"
+    },
+    "SECURE_AUTH_SALT": {
+      "description": "One of the wordpress secrets",
+      "generator": "secret"
+    },
+    "LOGGED_IN_SALT": {
+      "description": "One of the wordpress secrets",
+      "generator": "secret"
+    },
+    "NONCE_SALT": {
+      "description": "One of the wordpress secrets",
+      "generator": "secret"
     }
   },
   "image": "heroku/php",
