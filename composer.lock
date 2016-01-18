@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ebcf518c5523f9ec8782a7a8b7dadc1a",
+    "hash": "cca44cc264c8536fb1d796dfa6649f40",
     "packages": [
         {
             "name": "composer/installers",
@@ -364,6 +364,8 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-newrelic": "*"
+    },
     "platform-dev": []
 }
