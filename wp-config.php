@@ -26,8 +26,11 @@ define('DB_USER', $DBusername);
 define('DB_PASSWORD', $DBpassword);
 define('DB_HOST', $DBhost);
 
+define( 'AMAZON_KEY', getenv('AWS_ACCESS_KEY_ID') );
+define( 'AMAZON_SECRET', getenv('AWS_SECRET_ACCESS_KEY') );
 define( 'AWS_ACCESS_KEY_ID', getenv('AWS_ACCESS_KEY_ID') );
 define( 'AWS_SECRET_ACCESS_KEY', getenv('AWS_SECRET_ACCESS_KEY') );
+define( 'AS3CF_BUCKET', getenv('AMAZON_BUCKET'))
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
