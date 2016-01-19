@@ -18,7 +18,8 @@
         "wpackagist-plugin/w3-total-cache":"0.9.4.1",
 	    "wpackagist-plugin/broken-link-checker":"1.10.10",
         "wpackagist-plugin/wp-smtp-config":"1.0",
-        "ext-newrelic":"*"
+        "ext-newrelic":"*",
+        "ext-mbstring":"*"
     },
     "extra": {
        "heroku": {
