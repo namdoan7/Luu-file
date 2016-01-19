@@ -21,7 +21,8 @@
         "wpackagist-plugin/amazon-s3-and-cloudfront": "~0.9.11",
         "wpackagist-plugin/amazon-web-services": "~0.3.4",
         "ext-newrelic":"*",
-        "ext-mbstring":"*"
+        "ext-mbstring":"*",
+        "ext-gd":"*"
     },
     "extra": {
        "heroku": {
