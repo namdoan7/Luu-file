@@ -1,4 +1,6 @@
 *.log
+wordpress/*
+vendor/*
 wordpress/sitemap.xml
 wordpress/sitemap.xml.gz
 wordpress/wp-config.php
