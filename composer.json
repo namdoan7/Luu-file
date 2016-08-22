@@ -4,7 +4,7 @@
     "repositories":[
         {
             "type":"composer",
-            "url":"http://wpackagist.org"
+            "url":"https://wpackagist.org"
         }
     ],
     "require-dev" : {
@@ -19,9 +19,6 @@
         "wpackagist-plugin/amazon-s3-and-cloudfront":"1.0.4",
 	    "wpackagist-plugin/broken-link-checker":"1.10.10",
         "wpackagist-plugin/wp-smtp-config":"1.0",
-        "wpackagist-plugin/amazon-s3-and-cloudfront": "~0.9.11",
-        "wpackagist-plugin/amazon-web-services": "~0.3.4",
-        "ext-newrelic":"*",
         "ext-mbstring":"*",
         "ext-gd":"*"
     },
