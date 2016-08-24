@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c4f2e57ca550fe090bf1363c7db67fc5",
-    "content-hash": "0ce871e86841f4dc551139d032dde69b",
+    "hash": "ad497fefa220eeb1dab86908a625b176",
+    "content-hash": "3cdf0d05dd389a1f6c5f769a105acb9a",
     "packages": [
         {
             "name": "composer/installers",
@@ -111,16 +111,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.4.1",
+            "version": "4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "85d6a8c16c7e8bb369e7530d3676d16618f68e24"
+                "reference": "1fb4b67e331d82f9061eaf3fcbc94163db85c135"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/85d6a8c16c7e8bb369e7530d3676d16618f68e24",
-                "reference": "85d6a8c16c7e8bb369e7530d3676d16618f68e24",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/1fb4b67e331d82f9061eaf3fcbc94163db85c135",
+                "reference": "1fb4b67e331d82f9061eaf3fcbc94163db85c135",
                 "shasum": ""
             },
             "require": {
@@ -144,7 +144,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-01-06 18:46:15"
+            "time": "2016-08-16 18:32:04"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -213,7 +213,7 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/",
-            "time": "2016-06-06 05:09:10"
+            "time": "2016-08-23 03:40:04"
         },
         {
             "name": "wpackagist-plugin/amazon-s3-and-cloudfront",
@@ -257,16 +257,16 @@
         },
         {
             "name": "wpackagist-plugin/broken-link-checker",
-            "version": "1.10.10",
+            "version": "1.11.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/broken-link-checker/",
-                "reference": "tags/1.10.10"
+                "reference": "tags/1.11.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.10.10.zip",
-                "reference": "tags/1.10.10",
+                "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.11.2.zip",
+                "reference": "tags/1.11.2",
                 "shasum": null
             },
             "require": {
