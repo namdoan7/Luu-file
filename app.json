@@ -17,31 +17,6 @@
       "required": "true",
       "value": "TBC"
     },
-    "CDN_CNAME_0": {
-      "description": "The Amazon cloudfront CNAME",
-      "required": "true",
-      "value": "TBC"
-    },
-    "NEW_RELIC_APP_NAME": {
-      "description": "The newrelic app name",
-      "required": "true",
-      "value": "TBC"
-    },
-    "NEW_RELIC_API_KEY": {
-      "description": "The newrelic api key",
-      "required": "true",
-      "value": "TBC"
-    },
-    "NEW_RELIC_ID": {
-      "description": "The newrelic ID",
-      "required": "true",
-      "value": "TBC"
-    },
-    "GOOGLE_PAGESPEED_API_KEY": {
-      "description": "The google pagespeed API key",
-      "required": "true",
-      "value": "TBC"
-    },
     "AUTH_KEY": {
       "description": "One of the wordpress secrets",
       "generator": "secret"
