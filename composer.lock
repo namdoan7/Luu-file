@@ -4,15 +4,15 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "de88e67d549b1a3a45aa1d7a4279d3ad",
-    "content-hash": "5a23ec2ac4c81a2414a562c4e440d9f6",
+    "hash": "6937f5386bd3159814ea2092275d7d42",
+    "content-hash": "f8bbfdae06c42808bc42d1a8de0731ba",
     "packages": [
         {
             "name": "busbyjon/jonbusby-blog",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/busbyjon/jonbusby-blog.git",
+                "url": "https://github.com/busbyjon/jonbusby-blog-theme.git",
                 "reference": "db5fdf00bb4f06bfe1186741366f16aa3bfbaf38"
             },
             "type": "wordpress-theme",
