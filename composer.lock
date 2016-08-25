@@ -13,15 +13,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/busbyjon/jonbusby-blog-theme.git",
-                "reference": "182af3ed43e0965e109d7f4cf1dc091a8da193e5"
+                "reference": "cc94d740ac154e14d3906062506ec53b6542d524"
             },
             "require": {
                 "composer/installers": "~1.0",
+                "johnpbloch/wordpress": "*",
                 "php": ">=5.3.2"
             },
             "type": "wordpress-theme",
             "description": "Jon Busby's Wordpress Blog Theme",
-            "time": "2016-08-25 21:27:01"
+            "time": "2016-08-25 22:01:32"
         },
         {
             "name": "composer/installers",
