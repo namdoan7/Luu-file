@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "674dd12f66fb5700554c414ab0989f8f",
-    "content-hash": "00df34b8b6c6348c19fe91e06efdbbd2",
+    "hash": "de88e67d549b1a3a45aa1d7a4279d3ad",
+    "content-hash": "5a23ec2ac4c81a2414a562c4e440d9f6",
     "packages": [
         {
             "name": "busbyjon/jonbusby-blog",
@@ -346,6 +346,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-smtp-config/"
+        },
+        {
+            "name": "wpackagist-theme/nisarg",
+            "version": "1.2.6",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/nisarg/",
+                "reference": "1.2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/nisarg.1.2.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/nisarg/"
         }
     ],
     "packages-dev": [
