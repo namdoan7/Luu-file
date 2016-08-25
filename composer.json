@@ -5,6 +5,10 @@
         {
             "type":"composer",
             "url":"https://wpackagist.org"
+        },
+        {
+            "type": "git",
+            "url":  "https://github.com/busbyjon/jonbusby-blog.git"
         }
     ],
     "require-dev" : {
@@ -19,6 +23,7 @@
         "wpackagist-plugin/amazon-s3-and-cloudfront":"1.0.4",
 	    "wpackagist-plugin/broken-link-checker":"1.11.2",
         "wpackagist-plugin/wp-smtp-config":"1.0",
+        "busbyjon/jonbusby-blog": "dev-master",
         "ext-mbstring":"*",
         "ext-gd":"*"
     },

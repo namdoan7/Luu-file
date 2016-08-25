@@ -4,9 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ad497fefa220eeb1dab86908a625b176",
-    "content-hash": "3cdf0d05dd389a1f6c5f769a105acb9a",
+    "hash": "674dd12f66fb5700554c414ab0989f8f",
+    "content-hash": "00df34b8b6c6348c19fe91e06efdbbd2",
     "packages": [
+        {
+            "name": "busbyjon/jonbusby-blog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/busbyjon/jonbusby-blog.git",
+                "reference": "db5fdf00bb4f06bfe1186741366f16aa3bfbaf38"
+            },
+            "type": "wordpress-theme",
+            "description": "Jon Busby's Wordpress Blog Theme",
+            "time": "2015-01-06 14:06:37"
+        },
         {
             "name": "composer/installers",
             "version": "v1.1.0",
@@ -205,7 +217,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/akismet.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -226,7 +238,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-s3-and-cloudfront.1.0.4.zip",
-                "reference": "tags/1.0.4",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -246,7 +258,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/amazon-web-services.0.3.6.zip",
-                "reference": "tags/0.3.6",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -266,7 +278,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/broken-link-checker.1.11.2.zip",
-                "reference": "tags/1.11.2",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -286,7 +298,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/captcha.2011.2.11.zip",
-                "reference": "tags/2011.2.11",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -306,7 +318,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.6.1.zip",
-                "reference": "tags/0.6.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -326,7 +338,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-smtp-config.1.0.zip",
-                "reference": "tags/1.0",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -385,7 +397,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wpackagist-plugin/akismet": 20
+        "wpackagist-plugin/akismet": 20,
+        "busbyjon/jonbusby-blog": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
