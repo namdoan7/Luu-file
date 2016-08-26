@@ -24,6 +24,7 @@
 	    "wpackagist-plugin/broken-link-checker":"1.11.2",
         "wpackagist-plugin/wp-smtp-config":"1.0",
         "wpackagist-theme/nisarg":"1.2.6",
+        "wpackagist-plugin/jetpack":"4.2.2",
         "busbyjon/jonbusby-blog-theme": "dev-master",
         "ext-mbstring":"*",
         "ext-gd":"*"
