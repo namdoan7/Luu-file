@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-nginx -C nginx.conf wordpress/
+web: vendor/bin/heroku-hhvm-nginx -C nginx.conf wordpress/
