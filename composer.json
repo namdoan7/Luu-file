@@ -15,6 +15,7 @@
             "heroku/heroku-buildpack-php":"*"
         },
     "require": {
+        "hhvm":"^3.3",
         "johnpbloch/wordpress": "4.6",
         "wpackagist-plugin/akismet":"dev-trunk",
         "wpackagist-plugin/captcha":">=4.2.4",
