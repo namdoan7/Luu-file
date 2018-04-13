@@ -1,1 +1,3 @@
-document.write("hdkjàhkjsàkàlkjsallllllllk ákjdàiká");
+function(){
+documen.write("xin chao");
+}
