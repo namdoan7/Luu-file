@@ -1,0 +1,86 @@
+{% assign heading = 'We Also Recommand' %}
+<div class="related-div">
+<div id="title">{{ heading }}</div>
+<ul class="related-products">
+    {% for prod in collections.all.products %}
+        {% for item in cart.items %}
+  		
+  
+   {% for tag in item.product.tags %}
+  
+
+  	{% assign tag_it = tag | downcase  %}
+ 
+  
+  
+  {% assign tag_rm = tag_it | replace: ' ', '-'  %}
+ 
+
+
+	
+  
+  
+            {% if prod.handle contains  tag_rm and prod.handle != prod_handle and prod.handle != item.product.handle %} 
+  				
+                <li class="related-item {{ prod.handle }}" style="display:none">
+                  
+                  
+                  
+                    <h3 class="name">
+                        <a href="{{ prod.url }}" title="{{ prod.title | escape }}">{{ prod.title }}</a>
+                    </h3>
+                    <div class="price">
+                        <a href="{{ prod.url }}" title="{{ prod.title | escape }}">{{ prod.price | money }}</a>
+                    </div>
+                    
+                    <div class="image">            
+                        <a href="{{ prod.url | within: collection }}" title="{{ product.title | escape }}">{{ prod.featured_image | product_img_url: image_size | img_tag }}</a>
+                    </div>
+                    <div class="copy">
+                        {{ prod.description | stip_html | truncatewords: 15 }}
+                    </div>
+                    <div class="more"><a href="{{ prod.url }}" title="{{ prod.title | escape }}">View</a></div>
+            
+                  {% assign prod_handle = prod.handle  %}
+                  
+                
+                  
+                  
+                  <div class="clear"></div>
+                </li>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+    {% endfor %}
+      </ul>
+</div>
+<script>
+  $(".related-div").hide();
+  var item_re = $("li.related-item").length;
+    var Total_item = $("li.related-item").length, // Total number of raltaed item to choose from
+        item_toshow = 5, // total items to show in your cart page
+        array = [], // array with index number of all available items
+        shuffle = [], // array with shuffled index number
+        rnd;
+    
+    for (i = 0; i < Total_item; i++) {
+      array[i] = i;
+    }
+    
+    for (i = 0; i < Total_item; i++) { // pick numbers
+      rnd = Math.floor(Math.random() * array.length); 
+      shuffle[i] = array.splice(rnd,1)[0]; // remove the selected number from the array and get it in another variable
+    }
+    
+  
+  
+    for (i = 0; i < item_toshow; i++){
+        $("li.related-item").slice(shuffle[i],shuffle[i]+1).show();
+      
+    }
+  
+  if(item_re > 0){
+  $(".related-div").show();
+  }
+        
+</script>
