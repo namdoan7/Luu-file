@@ -1,3 +1,4 @@
+<?php echo wp_trim_words(get_the_content(), 18, ''); ?>
 
 <img src="<?php echo image_resize_crop(get_the_post_thumbnail_url(), 300, 300); ?>" />
 
