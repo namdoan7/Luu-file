@@ -1,4 +1,7 @@
 
+<img src="<?php echo image_resize_crop(get_the_post_thumbnail_url(), 300, 300); ?>" />
+
+
 function image_resize_crop ( $src, $w, $h, $dest = null, $override = false, $createNewIfExists = false ) {
 	$ext = array_pop ( explode ('.', $src) );
 	$filenameSrc = str_replace (".$ext", '', basename($src) );
