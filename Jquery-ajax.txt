@@ -1,0 +1,25 @@
+function search() {
+		
+				var urlLink = "<?php echo esc_url( home_url( '/blog' ) ); ?>";
+				var search_ct = jQuery('#idsearch').val();
+				var url1 = urlLink+'/?s='+search_ct;
+				var search_ct1 = search_ct.replace(/ /gi,'+');
+
+				if (search_ct1 != "") {
+					jQuery('.per_blogtm').html('');
+						
+		jQuery.ajax({ type: "GET",   
+					    url: urlLink+'/?s='+search_ct1,  
+					    success : function(data)
+					    {	
+					    	postEvent=jQuery(data).find('.per_blogtm').html();
+					        jQuery('.per_blogtm').append(postEvent);
+					    }
+					});
+	
+				}
+			
+		
+	}
+
+
