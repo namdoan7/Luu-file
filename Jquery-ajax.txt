@@ -8,7 +8,7 @@ function search() {
 				if (search_ct1 != "") {
 					jQuery('.per_blogtm').html('');
 						
-		jQuery.ajax({ type: "GET",   
+					jQuery.ajax({ type: "GET",   
 					    url: urlLink+'/?s='+search_ct1,  
 					    success : function(data)
 					    {	
