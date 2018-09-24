@@ -1,0 +1,109 @@
+{% assign heading = 'You may also like' %}
+
+<script type="text/javascript" src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
+
+
+<div class="related-div ">
+  
+  <div class="cart-related shopify-section index-section "  id="shopify-section-featured-collections">
+    <div class="page-width">
+  
+  <div class="section-header text-center"><h2>{{ heading }}</h2></div>
+<ul class="grid grid--uniform grid--view-items">
+      
+  
+     
+
+  
+  <div class="owl-carousel">
+ 
+   
+  
+        {% for item in cart.items %}	
+  			
+    {% for col_item in item.product.collections %}
+
+    {% for prod in col_item.products %}
+
+
+    
+  			<div class="cre_item">
+                <div class="related-item grid__item grid__item--featured-collections small--one-half medium-up--one-fifth {{ prod.handle }}" style="">
+            	<div class="grid-view-item product-card">
+                   <div class="image">            
+                        <a href="{{ prod.url | within: collection }}" title="{{ product.title | escape }}">
+                         
+                          
+                          {{ prod.featured_image | product_img_url: "medium" | img_tag}}
+                     
+                     
+                     </a>
+                    </div>
+                    <div class="name h5 grid-view-item__title">
+                        <a href="{{ prod.url }}" title="{{ prod.title | escape }}">{{ prod.title }}</a>
+                  </div>
+                  
+                  <div class="price">
+                    <span class="price-item price-item--regular" data-regular-price="">
+                      
+                    
+                       {{ prod.price | money }}
+                  </span>
+                  </div>
+                 <div class="quick-view-button" style="display: none;">
+                    <a class="sca-qv-button button-quick-view" href="#sca-qv-showqv" title="Quick Add" handle="{{ prod.handle }}" style="font-family: tahoma; font-size: 14px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">QUICK VIEW</a>
+                  </div>
+                  </div>
+                 
+                  {% assign prod_handle = prod.handle  %}
+                  
+                
+                  
+                  
+                  <div class="clear"></div>
+                </div>
+     		 </div>          
+
+    {% endfor %}
+    
+        {% endfor %}
+
+    {% endfor %}
+  </div>
+  
+  
+  </ul>
+       </div>
+  </div>
+</div>
+
+
+
+ <script type="text/javascript">
+$('.owl-carousel').owlCarousel({
+    loop:false,
+     margin:0,
+     nav:true,
+
+
+    responsive:{
+        0:{
+            items:2
+         
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+$(".related-div").hide();
+  
+  if($(".cre_item").text()){
+  $(".related-div").show();
+  }
+        
+</script>
