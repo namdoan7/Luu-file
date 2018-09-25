@@ -1,8 +1,5 @@
 {% assign heading = 'You may also like' %}
 
-<script type="text/javascript" src="{{ 'owl.carousel.min.js' | asset_url }}"></script>
-
-
 <div class="related-div ">
   
   <div class="cart-related shopify-section index-section "  id="shopify-section-featured-collections">
@@ -10,12 +7,6 @@
   
   <div class="section-header text-center"><h2>{{ heading }}</h2></div>
 <ul class="grid grid--uniform grid--view-items">
-      
-  
-     
-
-  
-  <div class="owl-carousel">
  
     {% assign prod_handle = '' %}
      {% assign item_handle = '' %}
@@ -105,7 +96,7 @@
   
     
     
-  </div>
+
   
   
   </ul>
@@ -116,26 +107,6 @@
 
 
  <script type="text/javascript">
-$('.owl-carousel').owlCarousel({
-    loop:false,
-     margin:0,
-     nav:true,
-
-
-    responsive:{
-        0:{
-            items:2
-         
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-
 $(".related-div").hide();
   
   if($(".cre_item").text()){
@@ -144,13 +115,4 @@ $(".related-div").hide();
         
 </script>
 
-                   <script type="text/javascript">
-                     var re_res = $(".re_res").text();
-                     
-   					
-//  					document.write(re_res);
-   
-                     
-                     
-                     
-                  </script>
+                  
