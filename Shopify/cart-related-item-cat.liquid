@@ -1,60 +1,33 @@
 {% assign heading = 'You may also like' %}
-
 <div class="related-div ">
-  
   <div class="cart-related shopify-section index-section "  id="shopify-section-featured-collections">
     <div class="page-width">
-  
   <div class="section-header text-center"><h2>{{ heading }}</h2></div>
 <ul class="grid grid--uniform grid--view-items">
  
     {% assign prod_handle = '' %}
      {% assign item_handle = '' %}
-    
      {% for item in cart.items %}	
-    
      {%assign  item_handle = item_handle | append: item.product.handle | append: ';' %}
     {% endfor %}
-    
-  
         {% for item in cart.items %}	
-    
-
-    
     {% for col_item in item.product.collections %}
-
     {% for prod in col_item.products %}
-
-    
-   
-     
- 
  {% if prod_handle contains  prod.handle or  item_handle contains  prod.handle %}
     {% else %}
-   
-
-    
-    
   			<div class="cre_item {{ prod.handle }}">
                 <div class="related-item grid__item grid__item--featured-collections small--one-half medium-up--one-fif2th {{ prod.handle }}" style="">
             	<div class="grid-view-item product-card">
                    <div class="image">            
                         <a href="{{ prod.url | within: collection }}" title="{{ product.title | escape }}">
-                         
-                          
                           {{ prod.featured_image | product_img_url: "medium" | img_tag}}
-                     
-                     
                      </a>
                     </div>
                     <div class="name h5 grid-view-item__title">
                         <a href="{{ prod.url }}" title="{{ prod.title | escape }}">{{ prod.title }}</a>
                   </div>
-                  
                   <div class="price">
                     <span class="price-item price-item--regular" data-regular-price="">
-                      
-                    
                        {{ prod.price | money }}
                   </span>
                   </div>
@@ -62,50 +35,20 @@
                     <a class="sca-qv-button button-quick-view" href="#sca-qv-showqv" title="Quick Add" handle="{{ prod.handle }}" style="font-family: tahoma; font-size: 14px; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">QUICK VIEW</a>
                   </div>
                   </div>
-                 
-                
                   {%assign  prod_handle = prod_handle | append: prod.handle | append: ';' %}
-                 
-                  
-             
-                  
-                  
                   <div class="clear"></div>
-                 
-                  
-                  
-                  
-                  
-                  
-                  
                 </div>
      		 </div>          
-
-
       {% endif %}
     
     {% endfor %}
-    
         {% endfor %}
 
     {% endfor %}
-    
-
-    
-    
-  
-    
-    
-
-  
-  
   </ul>
        </div>
   </div>
 </div>
-  
-
-
  <script type="text/javascript">
 $(".related-div").hide();
   
