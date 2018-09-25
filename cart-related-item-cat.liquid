@@ -17,18 +17,35 @@
   
   <div class="owl-carousel">
  
-   
+    {% assign prod_handle = '' %}
+     {% assign item_handle = '' %}
+    
+     {% for item in cart.items %}	
+    
+     {%assign  item_handle = item_handle | append: item.product.handle | append: ';' %}
+    {% endfor %}
+    
   
         {% for item in cart.items %}	
-  			
+    
+
+    
     {% for col_item in item.product.collections %}
 
     {% for prod in col_item.products %}
 
+    
+   
+     
+ 
+ {% if prod_handle contains  prod.handle or  item_handle contains  prod.handle %}
+    {% else %}
+   
 
     
-  			<div class="cre_item">
-                <div class="related-item grid__item grid__item--featured-collections small--one-half medium-up--one-fifth {{ prod.handle }}" style="">
+    
+  			<div class="cre_item {{ prod.handle }}">
+                <div class="related-item grid__item grid__item--featured-collections small--one-half medium-up--one-fif2th {{ prod.handle }}" style="">
             	<div class="grid-view-item product-card">
                    <div class="image">            
                         <a href="{{ prod.url | within: collection }}" title="{{ product.title | escape }}">
@@ -55,20 +72,39 @@
                   </div>
                   </div>
                  
-                  {% assign prod_handle = prod.handle  %}
-                  
                 
+                  {%assign  prod_handle = prod_handle | append: prod.handle | append: ';' %}
+                 
+                  
+             
                   
                   
                   <div class="clear"></div>
+                 
+                  
+                  
+                  
+                  
+                  
+                  
                 </div>
      		 </div>          
 
+
+      {% endif %}
+    
     {% endfor %}
     
         {% endfor %}
 
     {% endfor %}
+    
+
+    
+    
+  
+    
+    
   </div>
   
   
@@ -76,7 +112,7 @@
        </div>
   </div>
 </div>
-
+  
 
 
  <script type="text/javascript">
@@ -107,3 +143,14 @@ $(".related-div").hide();
   }
         
 </script>
+
+                   <script type="text/javascript">
+                     var re_res = $(".re_res").text();
+                     
+   					
+//  					document.write(re_res);
+   
+                     
+                     
+                     
+                  </script>
